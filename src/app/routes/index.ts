@@ -8,6 +8,9 @@ import { brandRoutes } from '../modules/brand/brand.route';
 import { blogRoutes } from '../modules/blog/blog.route';
 import { userRoutes } from '../modules/user/user.route';
 import { authRoutes } from '../modules/auth/auth.route';
+import { productRoutes } from '../modules/product/product.route';
+import { cartRoutes } from '../modules/cart/cart.route';
+import { orderRoutes } from '../modules/order/order.route';
 
 const rounter = Router();
 
@@ -47,6 +50,18 @@ const modulRouter = [
   {
     path: '/auth',
     route: authRoutes,
+  },
+  {
+    path: '/product',
+    route: productRoutes,
+  },
+  {
+    path: '/cart',
+    route: cartRoutes,
+  },
+  {
+    path: '/order',
+    route: orderRoutes,
   },
 ];
 
